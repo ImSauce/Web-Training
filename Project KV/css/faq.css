@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+
+@font-face {
+  font-family: 'Venite Adoremus';
+  src: url('../fonts/VeniteAdoremus-rgRBA.ttf') format('woff2');
+}
+
+
+.content  {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: top;
+  width: 80%; /* Define the square width */
+  color: white;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+
+.announcement {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: top;
+  width: 99%; /* Define the square width */
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+
+  overflow-y: auto; /* Add a vertical scrollbar when content overflows */
+}
+
+.announcement details {
+  width: 99%;
+  text-align: left;
+  transition: max-height 0.3s ease-in-out; /* Smooth height animation */
+  
+}
+
+.announcement details[open] {
+  max-height: 100vh; /* Expand to fit content */
+  justify-content: center;
+  
+}
+
+.announcement summary {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  margin: 1px 20px;
+  list-style: none;
+  padding-left: 20px;
+  border-radius: 10px;
+  background-color: rgba(107, 107, 107, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Animation for summary hover and click */
+}
+
+.announcement summary:hover {
+  background-color: rgba(107, 107, 107, 0.4); /* Darken on hover */
+  transform: scale(1.03); /* Slight zoom effect */
+}
+.announcement p {
+  
+  
+  font-family: "Montserrat", sans-serif;
+  padding-left: 20px;
+  margin: 10px;
+  font-size: 20px;
+  color: white;
+  word-wrap: break-word; /* Ensure long words break */
+  overflow-wrap: break-word; /* Compatibility with different browsers */
+  white-space: normal; /* Allow normal text wrapping */
+}
+
+
+.h2_title {
+  display: flex;
+  
+  justify-content: center;
+  align-items: bottom;
+  font-family: 'Venite Adoremus', sans-serif; 
+  letter-spacing: 4px;
+  margin: 10px;
+  font-size: 30px;
+  color: white;
+  
+
+}
+
+
+
+.announcement::-webkit-scrollbar {
+  width: 10px; /* Customize scrollbar width */
+}
+
+.announcement::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.5); /* Customize scrollbar color */
+  border-radius: 10px;
+}
+
+.announcement::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.7); /* Highlight on hover */
+}

@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+@font-face {
+  font-family: 'Venite Adoremus';
+  src: url('../fonts/VeniteAdoremus-rgRBA.ttf') format('woff2');
+}
+
+p  {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    padding: 10px;
+    text-align: justify;
+  }
+
+  .contacts_title{
+    padding: 12px;
+    font-family: 'Venite Adoremus', sans-serif; 
+    letter-spacing: 4px;
+    
+
+  }
+  .content_subtitle{
+    padding: 12px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .yap {
+
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+  .content_title {
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+    
+
+  }
+  .contacts_title {
+    display: flex;
+    justify-content: center;
+
+  }
+
+  .contacts_content{
+    margin-top: 50px; /* Add space from the top */
+    align-items: center;
+    align-self:center;
+    flex: 1;
+    color: white;
+    overflow-y: auto;
+
+  }
+
+  .contact_frame{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .contact_links{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 200px;
+    width: 500px;
+    justify-content: space-between;
+    
+  }
+
+ .box{
+  display: inline-flex; /* Enable Flexbox */
+    justify-content: left; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: left; /* Ensure text alignment */
+    gap: 10px; /* Add spacing between text and icon */
+    
+
+  }
+
+  .contact_links2{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 200px;
+    width: 500px;
+    justify-content: space-between;
+    
+  }
+
+ .box2{
+  display: inline-flex; /* Enable Flexbox */
+    justify-content: left; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    text-align: left; /* Ensure text alignment */
+    gap: 10px; /* Add spacing between text and icon */
+    
+
+  }
+    
+  .con_halo{
+    display: flex;
+    
+  }

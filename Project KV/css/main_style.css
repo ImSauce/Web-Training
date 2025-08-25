@@ -1,0 +1,147 @@
+*{margin: 0;padding: 0;
+    boarder: rgba(253, 253, 253, 0.1) 1px solid;
+    scrollbar-width: none;
+}
+
+/*border: rgba(0, 0, 0, 0.2) 1px solid;*/
+@font-face {
+    font-family: 'Venite Adoremus';
+    src: url('../fonts/VeniteAdoremus-rgRBA.ttf') format('truetype');
+    font-weight: normal; /* Optional: Define the weight */
+    font-style: normal; /* Optional: Define the style */
+}
+
+@font-face {
+    font-family: 'Telegraf';
+    src: url('../fonts/Telegraf UltraLight 200.ttf') format('truetype');
+    font-weight: normal; /* Optional: Define the weight */
+    font-style: normal; /* Optional: Define the style */
+}
+
+@font-face {
+    font-family: 'Venite Adoremus';
+    src: url('../fonts/VeniteAdoremus-rgRBA.ttf') format('woff2');
+}
+
+
+.main {
+    
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 50%), url(../images/bg3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+ 
+
+}
+
+
+.main2 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 50%), url(../images/bg6.jpg);
+}
+.main3 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 50%), url(../images/bg5.jpg);
+}
+.main4 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 50%), url(../images/bg.jpg);
+}
+.mainL {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 50%), url(../images/bg.jpg);
+}
+.mainS {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(../images/kayok.jpg);
+}
+.main5 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 50%), url(../images/bg8.jpg);
+}
+.main6 {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 50%, rgba(0, 0, 0, 0.2) 50%), url(../images/bg2.jpg);
+}
+
+.main2, .main3, .main4, .mainL, .mainS, .main5, .main6, .mainL, .mainS  {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+    overaflow: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+    background: #544a4a39;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    width: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+
+
+
+
+
+
+/*LOADING SCREEN*/
+.loader_wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed; /* Changed to fixed */
+    top: 0;
+    left: 0;
+    background-color: #181818;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Added z-index to ensure it's above other elements */
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 60px;
+    aspect-ratio: 1;
+    color: #ffffff;
+    position: relative;
+  }
+  .loader::before,
+  .loader::after {
+    content: "";
+    position: absolute;
+    inset:0;
+    background:
+      linear-gradient(currentColor 0 0) 0 calc(var(--s,0)*-100%)/100% calc(100%/3),
+      repeating-linear-gradient(90deg,currentColor 0 25%,#0000 0 50%) calc(var(--s,0)*100%) 50%/calc(4*100%/3) calc(100%/3);
+    background-repeat: no-repeat;
+    animation: l26 2s infinite;
+  }
+  .loader::after {
+    --s:-1;
+  }
+  @keyframes l26 {
+      0%,
+      10%  {transform:translateY(calc(var(--s,1)*0));   background-position: 0 calc(var(--s,0)*-100%),calc(var(--s,0)*100%) 50%}
+      33%  {transform:translateY(calc(var(--s,1)*-20%));background-position: 0 calc(var(--s,0)*-100%),calc(var(--s,0)*100%) 50%}
+      66%  {transform:translateY(calc(var(--s,1)*-20%));background-position: 0 calc(var(--s,0)*-100%),calc(var(--s,0)*100% + 100%) 50%}
+      90%,
+      100%  {transform:translateY(calc(var(--s,1)*0));  background-position: 0 calc(var(--s,0)*-100%),calc(var(--s,0)*100% + 100%) 50%}
+  }
+
+
+/* Prevent scrolling when preload is active */
+.preload {
+    overflow: hidden;
+}
+
+.fade-out {
+    opacity: 0;
+    transition: opacity 1s ease;
+    pointer-events: none; /* Prevent interactions while fading out */
+}
+
+

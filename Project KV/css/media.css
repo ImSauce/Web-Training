@@ -1,0 +1,85 @@
+
+/*  ===============TITLE==============   */
+.content > div {
+    font-size: 40px; /* Adjust to make the text larger */
+    letter-spacing: 10px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap'); /* Example font, similar to the image */
+
+
+/*take the font on the folder cuz google is shit and doesnt do it automatically*/
+@font-face {
+    font-family: 'Venite Adoremus';
+    src: url('../fonts/VeniteAdoremus-rgRBA.ttf') format('woff2');
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+   
+    
+}
+
+.layout_container {
+  overflow-y: auto;
+    margin: 0 auto;
+    columns: 4 200px;
+    column-gap: 1em;
+}
+
+.media_img {
+    display: block;
+    margin-bottom: 1em;
+   width: 100%;
+   border-radius: 20px;
+   animation: fadeIn 1.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden; /* Ensures content doesn't overflow the box */
+    position: relative; /* Required for layering text and image */
+}
+
+.media_img:hover {
+    box-shadow: 0 3px 9px rgb(0, 0, 0, 1);
+    transform: scale(1.05);
+  }
+
+
+
+.content {
+    width: 95%;
+    max-height: 89%;
+    background-color: rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    margin: .8rem auto;
+    border-radius: 20px;
+    
+  }
+  
+  .content::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    width: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+  }
+  
+  .content:hover::-webkit-scrollbar-thumb{
+    visibility: visible;
+  }
+  
+  
+  .content::-webkit-scrollbar {
+    width: 7px; 
+  }
+  
+  .content::-webkit-scrollbar-track {
+    background: #544a4a39; 
+  }
+  
+
+
+
+
+

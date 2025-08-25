@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/main_style.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/flexbox.css">
+    <link rel="icon" href="./images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <script src="script.js"></script>
+    <title>Project KV</title>  
+</head>
+
+<body>
+
+    <div class="mainL">
+
+        <div class="navbar"> 
+            <header>
+                
+                
+                <a href="media.html">
+                    <img class="navbar_icon" src="./images/icon.png" alt="icon" style="cursor: pointer;">
+                  </a>
+                <h2 class="navbar_heading">PKV</h2>
+               
+                
+                
+                <nav>
+                    <ul class="navbar_menu">
+                        <li><a href="index2.html">Home</a></li> 
+                        <li><a href="updates.html">Updates</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contacts.html">Contacts</a></li>   
+                        <li><a href="FAQ.html">FAQ</a></li> 
+                        <li><a href="buy.html">Purchase</a></li> 
+                    </ul>
+                </nav>
+                    
+                <a class="navbar_login" href="login.html"><button>Login</button></a>
+                <a class="navbar_Signup" href="signup.html"><button>Sign up</button></a>
+            </header>
+        </div>
+        
+        <div class="box">
+            
+            <div class="login-container">
+
+                <img class="login-icon" src="./images/niya.jpg" width="400" alt="icon"> 
+                <div class="separator">
+                    <h2 class="LoginTitle">Login</h2>
+                        <div class="input-group">
+                            <input type="text" id="name" placeholder=" " required>
+                            <label for="name">Email</label>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="password" id="password" placeholder=" " required>
+                            <label for="password">Password</label>
+                        </div>
+                        <button class="login-btn">LOGIN</button>
+
+
+                </div>
+                       
+            </div>
+        </div>    
+
+
+        
+    </div>
+    
+        
+    </div>
+
+
+    <div id="LoginPop" style="display: none;">
+        <img src="./images/maintenance.jpg" alt="Popup Image" class="popup-image">
+        <p class="popup-message">The server is currently undergoing maintenance. We kindly ask for your patience and apologize for any inconvenience caused. Please try again later.</p>
+        <button id="closePopup" class="popup-button">Close</button>
+      </div>
+
+   
+</body>
+
+</html>
+

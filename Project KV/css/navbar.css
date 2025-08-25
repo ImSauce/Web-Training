@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+@font-face {
+    font-family: 'Venite Adoremus';
+    src: url('../fonts/VeniteAdoremus-rgRBA.ttf') format('woff2');
+}
+
+
+li, a, button {
+font-family: "Montserrat", sans-serif;
+font-weight: 500;
+font-size: 16px;
+color: #edf0f1;
+text-decoration: none;
+}
+
+header {
+display: flex;
+justify-content: flex-end;
+align-items: center;
+
+}
+
+
+.navbar_heading{
+    margin-right: auto;
+    padding-left: 10px;
+    color: aliceblue;
+    font-family: 'Venite Adoremus', sans-serif; /* Fallback font: sans-serif */
+    letter-spacing: 1px;
+    
+}
+.navbar_icon{
+    cursor: pointer;
+    border-radius: 15px;
+    width: 50px;
+}
+
+.navbar_icon:hover {
+    background: linear-gradient(150deg, rgba(203, 203, 203, 0.1) 0%, rgb(0, 0, 0) 90%);
+    box-shadow: 0 3px 9px rgb(0, 0, 0, 1);
+    transform: scale(1.05);
+  }
+
+.navbar_menu{
+    list-style: none;
+}
+
+.navbar_menu li{
+    display : inline-block;
+    padding: 0px 20px;
+}
+
+.navbar_menu li a{
+    transition: all 0.3s ease 0s;
+}
+.navbar_menu li a:hover{
+    color: rgb(123, 123, 123);  
+}
+
+.navbar_login button {
+    padding : 10px 20px;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 50px;
+    cursor:pointer;
+    transition: all 0.3s ease 0s;
+    width: 110px;
+    margin: 5px;
+    
+}
+.navbar_login button:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    transform: scale(1.03);
+}
+
+.navbar_Signup button {
+    padding : 10px 20px;
+    color: white;
+    background-color: rgb(64,60,59);
+    border: none;
+    border-radius: 50px;
+    cursor:pointer;
+    transition: all 0.3s ease 0s;
+    width: 110px;
+    margin: 5px;
+    
+}
+
+.navbar_Signup button:hover{
+    background-color: rgba(64,60,59, 0.5);
+    transform: scale(1.03);
+}
+
+
+
+
+

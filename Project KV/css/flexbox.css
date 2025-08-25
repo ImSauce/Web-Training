@@ -1,0 +1,72 @@
+.main, .main2, .main3, .main4, .main5, .main6{
+    display: flex;
+    flex-direction: column;
+}
+
+.main div, .main2 div, .main3 div, .main4 div, .main5 div, .main6 div {
+    padding: 10px;
+}
+.navbar{
+    
+    align-items: flex-start;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%);
+    flex: 0;
+    height: 50px; /* Specific height */
+}
+
+.content{
+    margin-top: 0px; /* Add space from the top */
+    align-items: center;
+    align-self:center;
+    flex: 1;
+    color: white;
+
+}
+
+
+
+.vid {
+
+ margin-top: 20px;
+  margin-left: 400px;
+    
+}
+ 
+.content > div {
+   /*border: 1px solid white;  */ 
+    padding: 10px; 
+    margin: 5px;
+}
+
+.footer{
+    flex: 0;
+    color: rgb(217, 217, 217);
+    
+    
+}
+
+.footer p{
+    font-size: 10px;
+    text-align: left;
+ 
+}
+.footer a{
+    font-size: 10px;
+    text-align: left;
+}
+
+
+
+.content_windows  {
+    align-items: center;
+    bordaer: 1px solid white;  
+     padding: 10px; 
+     margin: 5px;
+ }
+ 
+ .content_mac  {
+    align-items: flex-start;
+    boarder: 1px solid white;  
+     padding: 10px; 
+     margin: 5px;
+ }

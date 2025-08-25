@@ -1,0 +1,224 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+@font-face {
+  font-family: 'Venite Adoremus';
+  src: url('../fonts/VeniteAdoremus-rgRBA.ttf') format('woff2');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*to center the login container*/
+.box{
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+/*whole sign in container*/
+.login-container {
+  color: black;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 1em;
+
+
+  margin: 0;
+  flex-direction: column;
+  background-color: rgba(255,255,255,1);
+  background: linear-gradient(100deg, rgb(255, 255, 255), rgb(150, 150, 150));
+
+  background: rgba(0,0,0,0,5);
+ 
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgb(0, 0, 0) ;
+  width: 100%;
+  max-width: 400px;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.separator {
+  padding: 40px 50px;
+  padding-top: 10px;
+}
+
+.login-icon{
+  border-radius: 18px 18px 0 0; /* Top-left and top-right corners only */
+  }
+
+.LoginTitle {
+  text-align: center;
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 20px;
+  font-family: 'Venite Adoremus', sans-serif; 
+  letter-spacing: 4px;
+}
+
+.input-group{
+    position: relative;
+    margin-bottom: 25px;
+}
+
+/*textbox border*/
+.input-group input{
+  width: 100%;
+  padding: 15px;
+  border: 1px solid rgb(81, 81, 81);
+  border-radius: 5px;
+  background: transparent;
+  color: black;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.5s ease;
+}
+
+/*put the username and password label inside the textbox*/
+.input-group label{
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 16px;
+  pointer-events: none;
+  transition: all 0.5s ease;
+  color: gray;
+}
+
+/*slide animation of username and password when clicked*/
+.input-group input:focus+label,
+.input-group input:not(:placeholder-shown)+label{
+  top: -20px;
+  left: 15px;
+  font-size: 13px;
+  color: black;
+}
+
+.input-group input:focus{
+  border-color: rgba(129, 129, 129, 0.5);
+}
+.login-btn {
+  /* Center button text */
+  display: flex;
+  justify-content: center; /* Centers text horizontally */
+  align-items: center; /* Centers text vertically */
+
+  width: 100%;
+  padding: 15px;
+  border: none;
+  color: white;
+  background: black;
+
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 4px 15px rgb(0, 0, 0, 0.5);
+  position: relative;
+
+  /* Ensure font properties are consistent */
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.login-btn:hover {
+  background: #353535;
+  box-shadow: 0 3px 9px rgb(0, 0, 0, 1);
+  transform: scale(1.03);
+  /* No font-related properties here */
+}
+
+.login-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, rgb(0, 0, 0, 1), rgb(24, 24, 24));
+  border-radius: 20px;
+  z-index: -2;
+  animation: glowing 1.5s infinite alternate;
+}
+
+.login-icon {
+  margin: 0;
+  padding: 0;
+
+}
+
+
+
+
+
+
+
+/*CUSTOM POP UP*/
+#LoginPop {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px; /* Increased width */
+  max-width: 90%; /* Responsive for smaller screens */
+  padding: 30px;
+  background: #1e1e1e; /* Aesthetic black background */
+  color: #ffffff; /* White text color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.8); /* Shadow for depth */
+  text-align: center; /* Center content inside the popup */
+  z-index: 1000;
+  border: 1px solid rgb(43, 43, 43);
+  opacity: 0; /* Initially hidden */
+  animation: slideIn 0.5s ease-out forwards; /* Animation */
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -60%); /* Start position */
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%); /* End position */
+  }
+}
+
+.popup-image {
+  width: 500px; /* Adjust as needed */
+  height: auto;
+  margin-bottom: 20px; /* Spacing between the image and the title */
+  border-radius: 10px; /* Optional: Make it circular */
+  box-shadow: 0 4px 10px rgba(12, 12, 12, 0.5); /* Add shadow for aesthetics */
+}
+
+.popup-message {
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 20px;
+}
+
+.popup-button {
+  background-color: #333; /* Dark gray button */
+  color: #fff;
+  border: none;
+  border-radius: 10px; /* Rounded corners for the button */
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.popup-button:hover {
+  background-color: #555; /* Lighter gray on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+
