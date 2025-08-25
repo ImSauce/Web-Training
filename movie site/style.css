@@ -1,0 +1,452 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(kayok.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    background-attachment: scroll; /* Make the background scroll with the content */
+    min-height: 100vh; /* Ensures that the section is at least the height of the viewport */
+    height: auto; /* Allows the section to grow with the content */
+}
+
+
+.navbar{
+    
+    width: 100%;
+    background-color: rgba(0,0,0, 0.3); /* Dark background for visibility */
+    color: #fff;
+    display: flex;
+  
+}
+
+
+.icon{
+    width: 70px;
+    float: left;
+    border-radius: 10px;
+    padding-bottom: 5px;
+ 
+    
+}
+
+.rounded_icon {
+    border-radius: 10px;
+}
+
+.logo{
+    color: #fff;
+    font-size: 15px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 15px;
+}
+
+.menu{
+    width: 700px;
+    float: left;
+    height: 10px;
+
+}
+.icon2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .title_name {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
+
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #db771b;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3 ease;
+}
+
+
+.cn:hover{
+    background-color: gray;
+     transition: 0.2s ease-in-out;
+}
+
+.content span{
+    color: gray;
+    font-size: 65px;
+}
+
+
+
+
+
+
+
+
+
+.movie1{
+    width: 250px;
+    height: 300px;
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%);
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.movie1 h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ffffff;
+    font-size: 22px;
+    letter-spacing: 2px;
+   
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px; 
+    
+}
+
+.movie-image1 {
+    display: block; 
+    margin: 0 auto; 
+    width: 150px; 
+    height: 200px; 
+  }
+
+
+
+
+.movie1 .btn{
+    width: 240px;
+    height: 40px;
+    background: #db771b;
+    border: none;
+    margin-top: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.movie1 .btn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3 ease;
+}
+
+.movie1 .btn:hover {
+    background: #edaf70; /* Change to your desired hover color */
+  }
+
+/*
+.movie1:hover{
+
+    background: linear-gradient(to top, rgba(39, 39, 39, 0.5) 50%, rgba(39, 39, 39,0.5) 50%);
+     transition: 0.2s ease-in-out;
+}
+
+*/
+
+
+
+
+.movie2{
+    width: 250px;
+    height: 300px;
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%);
+    position: absolute;
+    top: 80px;
+    left: 350px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.movie2 h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ffffff;
+    font-size: 22px;
+    letter-spacing: 2px;
+   
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px; 
+    
+}
+
+.movie-image2 {
+    display: block; 
+    margin: 0 auto; 
+    width: 150px; 
+    height: 200px; 
+  }
+
+
+
+
+.movie2 .btn{
+    width: 240px;
+    height: 40px;
+    background: #db771b;
+    border: none;
+    margin-top: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.movie2 .btn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3 ease;
+}
+
+.movie2 .btn:hover {
+    background: #edaf70; /* Change to your desired hover color */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .movie3{
+    width: 250px;
+    height: 300px;
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%);
+    position: absolute;
+    top: 80px;
+    left: 680px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.movie3 h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 2px;
+   
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px; 
+    
+}
+
+.movie-image3 {
+    display: block; 
+    margin: 0 auto; 
+    width: 150px; 
+    height: 200px; 
+  }
+
+
+
+
+.movie3 .btn{
+    width: 240px;
+    height: 40px;
+    background: #db771b;
+    border: none;
+    margin-top: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.movie3 .btn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3 ease;
+}
+
+.movie3 .btn:hover {
+    background: #edaf70; /* Change to your desired hover color */
+  }
+
+
+
+
+
+  
+
+
+
+  .movie4{
+    width: 250px;
+    height: 300px;
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%);
+    position: absolute;
+    top: 80px;
+    left: 1010px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.movie4 h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ffffff;
+    font-size: 22px;
+    letter-spacing: 2px;
+   
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px; 
+    
+}
+
+.movie-image4 {
+    display: block; 
+    margin: 0 auto; 
+    width: 150px; 
+    height: 200px; 
+  }
+
+
+
+
+.movie4 .btn{
+    width: 240px;
+    height: 40px;
+    background: #db771b;
+    border: none;
+    margin-top: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.movie4 .btn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3 ease;
+}
+
+.movie4 .btn:hover {
+    background: #edaf70; /* Change to your desired hover color */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .movie5{
+    width: 250px;
+    height: 300px;
+    background: linear-gradient(to top, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0.5) 50%);
+    position: absolute;
+    top: 80px;
+    left: 1340px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.movie5 h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #ffffff;
+    font-size: 22px;
+    letter-spacing: 2px;
+   
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px; 
+    
+}
+
+.movie-image5 {
+    display: block; 
+    margin: 0 auto; 
+    width: 150px; 
+    height: 200px; 
+  }
+
+
+
+
+.movie5 .btn{
+    width: 240px;
+    height: 40px;
+    background: #db771b;
+    border: none;
+    margin-top: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.movie5 .btn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3 ease;
+}
+
+.movie5 .btn:hover {
+    background: #edaf70; /* Change to your desired hover color */
+  }

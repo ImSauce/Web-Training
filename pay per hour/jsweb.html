@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>6.2. Introduction to JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        h1, h3, h2 {
+            margin: 10px;
+        }
+        input {
+            margin: 5px 0;
+        }
+    </style>
+    
+    <center><h1>ITS PAYDAY TIME</h1></center>
+</head>
+<body>
+
+    <center>  
+        <div>
+            <h3>Employee 1:</h3>
+                <label for="name">Employee Name: </label>
+                <input type="text" id="name" name="name" placeholder="enter name" required><br>
+                <label for="rate">Rate per day &thinsp;&thinsp;&emsp;: </label>
+                <input type="number" id="rate" name="rate" placeholder="enter rate" required> <br>
+                <label for="days">Days Worked&thinsp;&thinsp;&emsp;: </label>
+                <input type="number" id="days" name="days" placeholder="enter days" required><br><br>        
+        </div>
+
+
+        <div>
+            <h3>Employee 2:</h3>
+                <label for="name2">Employee Name: </label>
+                <input type="text" id="name2" name="name2" placeholder="enter name" required><br>
+                <label for="rate2">Rate per day &thinsp;&thinsp;&emsp;: </label>
+                <input type="number" id="rate2" name="rate2" placeholder="enter rate" required> <br>
+                <label for="days2">Days Worked&thinsp;&thinsp;&emsp;: </label>
+                <input type="number" id="days2" name="days2" placeholder="enter days" required><br><br>        
+        </div>
+
+
+        <div>
+            <h3>Employee 2:</h3>
+                <label for="name3">Employee Name: </label>
+                <input type="text" id="name3" name="name3" placeholder="enter name" required><br>
+                <label for="rate3">Rate per day &thinsp;&thinsp;&emsp;: </label>
+                <input type="number" id="rate3" name="rate3" placeholder="enter rate" required> <br>
+                <label for="days3">Days Worked&thinsp;&thinsp;&emsp;: </label>
+                <input type="number" id="days3" name="days3" placeholder="enter days" required><br><br>        
+        </div>
+
+
+
+
+
+
+
+        <div>
+            <button onclick="computeSalary()">Compute Salary</button>
+            <h2>Output</h2>
+            <div id="output"></div>
+            <div id="output2"></div>
+            <div id="output3"></div>
+        </div>
+    </center>
+
+    <script>
+        function computeSalary() {
+            
+            let name = document.getElementById('name').value.trim();
+            let rate = parseFloat(document.getElementById('rate').value);
+            let days = parseInt(document.getElementById('days').value);
+            let output = '';
+            
+            if (name === '' || rate == 0 || days == 0) {
+                output = "Please make sure you entered everything";
+            } else {    
+                let salary = rate * days;
+                output = `Employee Name: ${name}<br>Salary: ${salary.toLocaleString()}<br><br>`;
+            }
+
+            document.getElementById('output').innerHTML = output;
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            let name2 = document.getElementById('name2').value.trim();
+            let rate2 = parseFloat(document.getElementById('rate2').value);
+            let days2 = parseInt(document.getElementById('days2').value);
+            let output2 = '';
+            
+            if (name2 === '' || rate2 == 0 || days2 == 0) {
+                output2 = "Please make sure you entered everything";
+            } else {    
+                let salary2 = rate2 * days2;
+                output2 = `Employee Name: ${name2}<br>Salary: ${salary2.toLocaleString()}<br><br>`;
+            }
+
+            document.getElementById('output2').innerHTML = output2;
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            let name3 = document.getElementById('name3').value.trim();
+            let rate3 = parseFloat(document.getElementById('rate3').value);
+            let days3 = parseInt(document.getElementById('days3').value);
+            let output3 = '';
+            
+            if (name3 === '' || rate3 == 0 || days3 == 0) {
+                output3 = "Please make sure you entered everything";
+            } else {    
+                let salary3 = rate3 * days3;
+                output3 = `Employee Name: ${name3}<br>Salary: ${salary3.toLocaleString()}<br><br>`;
+            }
+
+            document.getElementById('output3').innerHTML = output3;
+
+        }
+    </script>
+</body>
+</html>

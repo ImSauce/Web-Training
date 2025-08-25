@@ -1,0 +1,207 @@
+* {
+    margin: 0.5em;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('atsuko.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: #fff0f5;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(252, 182, 193, 0.911); 
+    padding: 1em;
+    border-radius: 15px;
+    margin: 1em auto;
+    width: 90%;
+    max-width: 800px;
+}
+
+.navbar a {
+    color: #4b002b;
+    text-decoration: none;
+    margin: 0 1.5em;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #ffd4db;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 1em;
+    color: #ffe0e9;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.content {
+    width: 60%;
+    background-color: rgba(124, 84, 94, 0.3);
+    border-radius: 20px;
+    padding: 2em;
+    margin: 2em auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pic {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-top: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.flower-container {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+    padding: 2em;
+}
+
+.flower-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 1.5em;
+    width: 300px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.flower-card:hover {
+    transform: translateY(-5px);
+}
+
+.flower-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 1em 0;
+}
+
+.flower-card h2 {
+    margin-bottom: 0.5em;
+    color: #ffe0e9;
+}
+
+.flower-card span {
+    display: block;
+    margin-top: 1em;
+    font-weight: bold;
+    color: #ffc2d1;
+}
+
+
+
+
+
+
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+    align-items: center;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 1em 2em;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-right: 1.5em;
+}
+
+.contact-card p {
+    color: #fff;
+    font-size: 1.1em;
+    margin: 0;
+}
+
+
+
+
+.services-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 2em;
+    align-items: center;
+}
+
+.service-card {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+    padding: 1em 2em;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.service-card h3 {
+    margin: 0;
+    color: #ffe0e9;
+}
+
+.service-card p {
+    margin: 0.5em 0 0 0;
+    color: #f0f0f0;
+}
+
+
+
+
+
+
+
+
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 0.5em 1em;
+    font-size: 0.85em;
+    color: #f0f0f0;
+    border-top-right-radius: 10px;
+}

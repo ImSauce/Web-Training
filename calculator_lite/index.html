@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator Lite</title>
+</head>
+<body  class="main"  style = "background-repeat: no-repeat; background-size: 100% 100%; background-attachment:fixed;">
+    
+    <div id="calculator">
+
+        <h2>Simple JavaScript Calculator</h2>
+
+        <table>
+            <tr>
+                <td>1st Number</td>
+                <td><input id="num1"></td>
+            </tr>
+            <tr>
+                <td>2st Number</td>
+                <td><input id="num2"></td>
+            </tr>
+            <tr>
+                <td>Answer</td>
+                <td><input id="answer" readonly></td>
+            </tr>
+        </table>
+
+        <div id="keys">
+            <button onclick="plus('+')">+</button>
+            <button onclick="minus('-')">-</button>
+            <button onclick="multiply('*')">*</button>
+            <button onclick="divide('/')">/</button>
+            <button onclick="erase()" id="clear">Clear</button>
+
+
+        </div>
+
+    
+        
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midterm Grade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="main"  style = "background-repeat: no-repeat; background-size: 100% 100%; background-attachment:fixed;">
+    <div id="GRADES">
+        <h2>Midterm Grade</h2>
+
+        <table>
+        <tr>
+            <td>Quiz 1:</td>
+            <td><input id="Mquiz1"></td>
+        </tr>
+        <tr>
+            <td>Quiz 2:</td>
+            <td><input id="Mquiz2"></td>
+        </tr>
+        <tr>
+            <td>Quiz 3:</td>
+            <td><input id="Mquiz3"></td>
+        </tr>
+
+        <tr>
+            <td>Enter Laboratory Activity 1:</td>
+            <td><input id="Mlab1"></td>
+        </tr>
+        <tr>
+            <td>Enter Laboratory Activity 2:</td>
+            <td><input id="Mlab2"></td>
+        </tr>
+        <tr>
+            <td>Enter Laboratory Activity 3:</td>
+            <td><input id="Mlab3"></td>
+        </tr>
+
+        <tr>
+            <td>Enter Assignment 1:</td>
+            <td><input id="Mass1"></td>
+        </tr>
+        <tr>
+            <td>Enter Assignment 2:</td>
+            <td><input id="Mass2"></td>
+        </tr>
+        <tr>
+            <td>Enter Midterm Exam:</td>
+            <td><input id="Mexam"></td>
+        </tr>
+        <tr>
+            <td>Enter Prelim Grade:</td>
+            <td><input id="Prelim"></td>
+        </tr>
+        </table>
+
+        <h1>Your Midterm Grade is:</h1>
+        <input id="Mresult" readonly>
+
+        <div id="clickables">
+            <button id="computeBtn" onclick="Compute()">Compute</button>
+            <button id="resetBtn" onclick="Reset()">Reset</button>
+        </div>
+
+        
+
+        <script src="script.js"></script>
+
+
+    </div>
+    
+</body>
+</html>

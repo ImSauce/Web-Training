@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prelim Grade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="main"  style = "background-repeat: no-repeat; background-size: 100% 100%; background-attachment:fixed;">
+    <div id="GRADES">
+        <h2>Prelim Grade</h2>
+
+        <table>
+        <tr>
+            <td>Quiz 1:</td>
+            <td><input id="Pquiz1"></td>
+        </tr>
+        <tr>
+            <td>Quiz 2:</td>
+            <td><input id="Pquiz2"></td>
+        </tr>
+        <tr>
+            <td>Quiz 3:</td>
+            <td><input id="Pquiz3"></td>
+        </tr>
+
+        <tr>
+            <td>Enter Laboratory Activity 1:</td>
+            <td><input id="Plab1"></td>
+        </tr>
+        <tr>
+            <td>Enter Laboratory Activity 2:</td>
+            <td><input id="Plab2"></td>
+        </tr>
+        <tr>
+            <td>Enter Laboratory Activity 3:</td>
+            <td><input id="Plab3"></td>
+        </tr>
+
+        <tr>
+            <td>Enter Assignment 1:</td>
+            <td><input id="Pass1"></td>
+        </tr>
+        <tr>
+            <td>Enter Assignment 2:</td>
+            <td><input id="Pass2"></td>
+        </tr>
+        <tr>
+            <td>Enter Prelim Exam:</td>
+            <td><input id="Pexam"></td>
+        </tr>
+        </table>
+
+        <h1>Your Prelim Grade is:</h1>
+        <input id="Presult" readonly>
+
+        <div id="clickables">
+            <button id="computeBtn" onclick="Compute()">Compute</button>
+            <button id="resetBtn" onclick="Reset()">Reset</button>
+        </div>
+
+       
+
+        <script src="script.js"></script>
+
+
+    </div>
+    
+</body>
+</html>

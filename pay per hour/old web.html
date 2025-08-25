@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>6.2. Introduction to JavaScript</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+       
+        input {
+            margin: 5px 0;
+        }
+    </style>
+
+</head>
+<body>
+    <center>
+        <h1>Intro to JavaScript</h1>
+        <div>
+            <h3>Employee 1:</h3>
+            <label for="name">Employee Name: </label>
+            <input type="text" id="name" name="name" placeholder="Enter name" required><br>
+            <label for="rate">Rate per day: </label>
+            <input type="number" id="rate" name="rate" placeholder="Enter rate" required><br>
+            <label for="days">Days Worked: </label>
+            <input type="number" id="days" name="days" placeholder="Enter days" required><br><br>
+            <button onclick="computeSalary()">Compute Salary</button>
+        </div>
+        <div>
+            <h2>Output</h2>
+            <div id="output"></div>
+        </div>
+    </center>
+
+    <script>
+        function computeSalary() {
+            // Get input values
+            let name = document.getElementById('name').value.trim();
+            let rate = parseFloat(document.getElementById('rate').value);
+            let days = parseInt(document.getElementById('days').value);
+
+            // Prepare output container
+            let output = '';
+
+            // Validate inputs
+            if (name === '') {
+                output = "Please enter the employee's name.";
+            } else if (isNaN(rate) || rate <= 0) {
+                output = "Please enter a valid rate (greater than 0).";
+            } else if (isNaN(days) || days <= 0) {
+                output = "Please enter a valid number of days worked (greater than 0).";
+            } else {
+                // Perform the calculation
+                let salary = rate * days;
+                output = `Employee Name: ${name}<br>Salary: ${salary.toLocaleString()}`;
+            }
+
+            // Display the output
+            document.getElementById('output').innerHTML = output;
+        }
+    </script>
+</body>
+</html>

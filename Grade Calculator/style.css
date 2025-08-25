@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1e1e1e;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f5f5f5;
+    padding: 10px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('ha.png');
+}
+
+#GRADES {
+    background-color: #2b2b2ba4;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #00ffae;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0.8rem;
+}
+
+td {
+    font-size: 1rem;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+input {
+    width: 100%;
+    height: 2.5rem;
+    padding: 0.5rem;
+    border: none;
+    font-weight: bold;
+    border-radius: 0.8rem;
+    background-color: #3a3a3a94;
+    color: white;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    background-color: #4d4d4d;
+}
+
+input[readonly] {
+    background-color: #18181879;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 2px solid #00ffae;
+    margin-top: 0.5rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 1.5rem 0 0.3rem;
+    color: #ccc;
+}
+
+#clickables {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+button {
+    flex: 1;
+    min-width: 120px;
+    padding: 0.7rem 1rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: scale(0.96);
+}
+
+#computeBtn {
+    background-color: #00c78b;
+    color: white;
+}
+
+#computeBtn:hover {
+    background-color: #00ffae;
+}
+
+#resetBtn {
+    background-color: #3a3a3a;
+    color: white;
+}
+
+#resetBtn:hover {
+    background-color: #4d4d4d;
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+    td {
+        display: block;
+        width: 100%;
+    }
+    table {
+        border-spacing: 0.5rem;
+    }
+}

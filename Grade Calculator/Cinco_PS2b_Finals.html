@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Grade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="main"  style = "background-repeat: no-repeat; background-size: 100% 100%; background-attachment:fixed;">
+    <div id="GRADES">
+        <h2>Final Grade</h2>
+
+        <table>
+        <tr>
+            <td>Quiz 1:</td>
+            <td><input id="Fquiz1"></td>
+        </tr>
+        <tr>
+            <td>Quiz 2:</td>
+            <td><input id="Fquiz2"></td>
+        </tr>
+        <tr>
+            <td>Quiz 3:</td>
+            <td><input id="Fquiz3"></td>
+        </tr>
+
+        <tr>
+            <td>Enter Laboratory Activity 1:</td>
+            <td><input id="Flab1"></td>
+        </tr>
+        <tr>
+            <td>Enter Laboratory Activity 2:</td>
+            <td><input id="Flab2"></td>
+        </tr>
+        <tr>
+            <td>Enter Laboratory Activity 3:</td>
+            <td><input id="Flab3"></td>
+        </tr>
+
+        <tr>
+            <td>Enter Assignment 1:</td>
+            <td><input id="Fass1"></td>
+        </tr>
+        <tr>
+            <td>Enter Assignment 2:</td>
+            <td><input id="Fass2"></td>
+        </tr>
+        <tr>
+            <td>Enter Final Exam:</td>
+            <td><input id="Fexam"></td>
+        </tr>
+        <tr>
+            <td>Enter Prelim Grade:</td>
+            <td><input id="Prelim"></td>
+        </tr>
+        <tr>
+            <td>Enter Midtem Grade:</td>
+            <td><input id="Midterm"></td>
+        </tr>
+        </table>
+
+        <h1>Your Final Grade is:</h1> 
+        <input id="Fresult" readonly>
+
+        <div id="clickables">
+            <button id="computeBtn" onclick="Compute()">Compute</button>
+            <button id="resetBtn" onclick="Reset()">Reset</button>
+        </div>
+
+       
+
+        <script src="script.js"></script>
+
+
+    </div>
+    
+</body>
+</html>
