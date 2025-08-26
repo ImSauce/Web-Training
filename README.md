@@ -1,4 +1,4 @@
-##SCREENSHOTS
+# Screenshots
 
 ### Personal Info
 <img src="screenshots/personal.png"/>
